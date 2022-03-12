@@ -8,4 +8,4 @@ function miniMaxSum(arr) {
 }
 
 console.log("*******************");
-console.log();
+console.log( "miniMaxSum( [1,2,3,4,5] )", miniMaxSum( [1,2,3,4,5] ) );
