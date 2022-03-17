@@ -21,11 +21,20 @@ function timeConversion(s) {
     // return the string
 
     // Write your code here
+    // Create a local string to be manipulated then returned
     let output = "";
-    output += "B";
-    output += "A";
-    console.log({ output });
+
+    // Base Case
+    // A string that starts with 12 and ends with AM will need to start with 00
+    if (s[0] == '1' && s[8] == 'A') {
+        output += '00'
+        output += ':' + s[3] + s[4] + ':' + s[6] + s[7]
+        return output;
+    }
+
+    return output;
 }
 
 console.log("\n***** Time Conversion - Algo.js ********\n");
 console.log("Time Conversion: 07:05:45PM :", timeConversion( '07:05:45PM' ));
+console.log("Time Conversion: 12:01:00AM :", timeConversion( '12:01:00AM' ));
