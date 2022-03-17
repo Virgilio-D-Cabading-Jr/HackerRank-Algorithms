@@ -30,3 +30,9 @@ string: the time in  hour format
 # Input
 
 A single string  that represents a time in -hour clock format (i.e.:  or ).
+
+# Sample
+
+Input: 07:05:45PM
+
+Output: 19:05:45
