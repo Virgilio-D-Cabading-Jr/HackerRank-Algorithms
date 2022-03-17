@@ -34,11 +34,12 @@ function timeConversion(s) {
 
     // Start to Evaluate string
     // Check if AM or PM
-    // If AM, then remove AM and return string
-    // if PM, then remove PM and add 12 hours to start of time
     if (s[8] == 'A') {
+        // If AM, then remove AM and return string
         console.log("Found AM", s);
+        return s[0] + s[1] + ':' + s[3] + s[4] + ':' + s[6] + s[7]
     } else {
+        // if PM, then remove PM and add 12 hours to start of time
         console.log("Found PM", s);
     }
 
