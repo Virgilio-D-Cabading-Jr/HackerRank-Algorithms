@@ -21,7 +21,10 @@ function timeConversion(s) {
     // return the string
 
     // Write your code here
-
+    let output = "";
+    output += "B";
+    output += "A";
+    console.log({ output });
 }
 
 console.log("\n***** Time Conversion - Algo.js ********\n");
