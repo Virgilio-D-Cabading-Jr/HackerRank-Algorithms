@@ -41,6 +41,8 @@ function timeConversion(s) {
     } else {
         // if PM, then remove PM and add 12 hours to start of time
         console.log("Found PM", s);
+        let hour = parseInt( s[0] + s[1] ) + 12;
+        console.log({ hour });
     }
 
     return output;
