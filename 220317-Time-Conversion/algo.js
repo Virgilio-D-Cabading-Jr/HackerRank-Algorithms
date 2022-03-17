@@ -36,6 +36,11 @@ function timeConversion(s) {
     // Check if AM or PM
     // If AM, then remove AM and return string
     // if PM, then remove PM and add 12 hours to start of time
+    if (s[8] == 'A') {
+        console.log("Found AM", s);
+    } else {
+        console.log("Found PM", s);
+    }
 
     return output;
 }
@@ -43,3 +48,5 @@ function timeConversion(s) {
 console.log("\n***** Time Conversion - Algo.js ********\n");
 console.log("Time Conversion: 07:05:45PM :", timeConversion( '07:05:45PM' ));
 console.log("Time Conversion: 12:01:00AM :", timeConversion( '12:01:00AM' ));
+console.log("Time Conversion: 06:16:32AM :", timeConversion( '06:16:32AM' ));
+console.log("Time Conversion: 06:16:32PM :", timeConversion( '06:16:32PM' ));
