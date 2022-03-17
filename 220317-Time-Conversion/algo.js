@@ -43,8 +43,8 @@ function timeConversion(s) {
         console.log("Found PM", s);
         let hour = parseInt( s[0] + s[1] ) + 12;
         console.log({ hour });
+        output = hour.toString() + ':' + s[3] + s[4] + ':' + s[6] + s[7]
     }
-
     return output;
 }
 
