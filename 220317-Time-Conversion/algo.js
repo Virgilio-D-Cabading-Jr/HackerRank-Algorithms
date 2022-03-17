@@ -10,6 +10,16 @@
  */
 
 function timeConversion(s) {
+    // Approach:
+    // Create a local string to be manipulated then returned
+    // Base Case
+    // A string that starts with 12 and ends with AM will need to start with 00
+    // Start to Evaluate string
+    // Check if AM or PM
+    // If AM, then remove AM and return string
+    // if PM, then remove PM and add 12 hours to start of time
+    // return the string
+
     // Write your code here
 
 }
