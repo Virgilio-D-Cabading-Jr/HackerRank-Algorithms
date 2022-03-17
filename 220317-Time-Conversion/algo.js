@@ -32,6 +32,11 @@ function timeConversion(s) {
         return output;
     }
 
+    // Start to Evaluate string
+    // Check if AM or PM
+    // If AM, then remove AM and return string
+    // if PM, then remove PM and add 12 hours to start of time
+
     return output;
 }
 
